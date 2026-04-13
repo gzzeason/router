@@ -1,2 +1,16 @@
 version: 2
-# updates: []
+updates:
+  # 1. 监控 pnpm 依赖
+  - package-ecosystem: "pnpm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    # 建议在大版本升级期间限制 PR 数量，避免干扰
+    open-pull-requests-limit: 5
+    # 只有在使用 pnpm 时，确保 lock 文件在根目录
+
+  # 2. 监控 GitHub Actions 插件更新
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
