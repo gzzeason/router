@@ -1,4 +1,4 @@
-import { getModelsByProviderId } from "open-sse/config/providerModels.js";
+import { getModelsByProviderId } from "domain/config/providerModels.js";
 
 /**
  * Format ISO date string to countdown format (inspired by vscode-antigravity-cockpit)

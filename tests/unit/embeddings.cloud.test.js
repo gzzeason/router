@@ -28,8 +28,8 @@ import {
   extractBearerToken,
   parseApiKey,
 } from "../../cloud/src/utils/apiKey.js";
-import { handleEmbeddingsCore } from "../../open-sse/handlers/embeddingsCore.js";
-import { getModelInfoCore } from "../../open-sse/services/model.js";
+import { handleEmbeddingsCore } from "../../domain/handlers/embeddingsCore.js";
+import { getModelInfoCore } from "../../domain/services/model.js";
 
 // ─── Module mocks (hoisted before imports) ───────────────────────────────────
 

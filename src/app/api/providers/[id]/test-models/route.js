@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 import {
   PROVIDER_ID_TO_ALIAS,
   getProviderModels,
-} from "open-sse/config/providerModels.js";
+} from "domain/config/providerModels.js";
 
 import { getApiKeys, getProviderConnectionById } from "@/lib/localDb";
 import {

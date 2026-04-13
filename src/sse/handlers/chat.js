@@ -1,11 +1,11 @@
-import { HTTP_STATUS } from "open-sse/config/runtimeConfig.js";
-import { handleChatCore } from "open-sse/handlers/chatCore.js";
-import "open-sse/index.js";
-import { handleComboChat } from "open-sse/services/combo.js";
-import { getProjectIdForConnection } from "open-sse/services/projectId.js";
-import { detectFormatByEndpoint } from "open-sse/translator/formats.js";
-import { cacheClaudeHeaders } from "open-sse/utils/claudeHeaderCache.js";
-import { errorResponse, unavailableResponse } from "open-sse/utils/error.js";
+import { HTTP_STATUS } from "domain/config/runtimeConfig.js";
+import { handleChatCore } from "domain/handlers/chatCore.js";
+import "domain/index.js";
+import { handleComboChat } from "domain/services/combo.js";
+import { getProjectIdForConnection } from "domain/services/projectId.js";
+import { detectFormatByEndpoint } from "domain/translator/formats.js";
+import { cacheClaudeHeaders } from "domain/utils/claudeHeaderCache.js";
+import { errorResponse, unavailableResponse } from "domain/utils/error.js";
 
 import { getSettings } from "@/lib/localDb";
 

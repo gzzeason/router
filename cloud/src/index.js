@@ -1,6 +1,6 @@
-import { ollamaModels } from "open-sse/config/ollamaModels.js";
-import { initTranslators } from "open-sse/translator/index.js";
-import { transformToOllama } from "open-sse/utils/ollamaTransform.js";
+import { ollamaModels } from "domain/config/ollamaModels.js";
+import { initTranslators } from "domain/translator/index.js";
+import { transformToOllama } from "domain/utils/ollamaTransform.js";
 
 import { handleCacheClear } from "./handlers/cache.js";
 import { handleChat } from "./handlers/chat.js";

@@ -2,7 +2,7 @@
 import {
   TOKEN_EXPIRY_BUFFER_MS as BUFFER_MS,
   refreshTokenByProvider as _refreshTokenByProvider,
-} from "open-sse/services/tokenRefresh.js";
+} from "domain/services/tokenRefresh.js";
 
 import * as log from "../utils/logger.js";
 

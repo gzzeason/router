@@ -1,7 +1,7 @@
 // Ensure proxyFetch is loaded to patch globalThis.fetch
-import { getExecutor } from "open-sse/executors/index.js";
-import "open-sse/index.js";
-import { getUsageForProvider } from "open-sse/services/usage.js";
+import { getExecutor } from "domain/executors/index.js";
+import "domain/index.js";
+import { getUsageForProvider } from "domain/services/usage.js";
 
 import {
   getProviderConnectionById,

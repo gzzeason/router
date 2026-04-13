@@ -1,4 +1,4 @@
-import { PROVIDER_MODELS as MODELS } from "open-sse/config/providerModels.js";
+import { PROVIDER_MODELS as MODELS } from "domain/config/providerModels.js";
 
 import { AI_PROVIDERS, isOpenAICompatibleProvider } from "./providers.js";
 
@@ -13,7 +13,7 @@ export {
   getModelStrip,
   PROVIDER_ID_TO_ALIAS,
   getModelsByProviderId,
-} from "open-sse/config/providerModels.js";
+} from "domain/config/providerModels.js";
 
 // Providers that accept any model (passthrough)
 const PASSTHROUGH_PROVIDERS = new Set(

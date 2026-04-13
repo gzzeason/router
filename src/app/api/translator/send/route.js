@@ -1,4 +1,4 @@
-import { getExecutor, refreshTokenByProvider } from "open-sse/index.js";
+import { getExecutor, refreshTokenByProvider } from "domain/index.js";
 
 import { getProviderConnections } from "@/lib/localDb.js";
 

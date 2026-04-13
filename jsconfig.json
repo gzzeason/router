@@ -3,8 +3,8 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
-      "open-sse": ["./open-sse"],
-      "open-sse/*": ["./open-sse/*"]
+      "open-sse": ["domain"],
+      "open-sse/*": ["domain/*"]
     },
     "module": "ESNext",
     "moduleResolution": "bundler"

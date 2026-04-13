@@ -1,6 +1,6 @@
-import { HTTP_STATUS } from "open-sse/config/runtimeConfig.js";
-import { handleTtsCore } from "open-sse/handlers/ttsCore.js";
-import { errorResponse, unavailableResponse } from "open-sse/utils/error.js";
+import { HTTP_STATUS } from "domain/config/runtimeConfig.js";
+import { handleTtsCore } from "domain/handlers/ttsCore.js";
+import { errorResponse, unavailableResponse } from "domain/utils/error.js";
 
 import { getSettings } from "@/lib/localDb";
 

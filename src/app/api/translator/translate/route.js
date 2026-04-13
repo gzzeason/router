@@ -1,10 +1,10 @@
 import { NextResponse } from "next/server";
 
-import { getExecutor } from "open-sse/executors/index.js";
-import { parseModel } from "open-sse/services/model.js";
-import { detectFormat, getTargetFormat } from "open-sse/services/provider.js";
-import { FORMATS } from "open-sse/translator/formats.js";
-import { translateRequest } from "open-sse/translator/index.js";
+import { getExecutor } from "domain/executors/index.js";
+import { parseModel } from "domain/services/model.js";
+import { detectFormat, getTargetFormat } from "domain/services/provider.js";
+import { FORMATS } from "domain/translator/formats.js";
+import { translateRequest } from "domain/translator/index.js";
 
 import { getProviderConnections } from "@/lib/localDb.js";
 

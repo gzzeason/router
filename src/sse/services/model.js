@@ -3,7 +3,7 @@ import {
   getModelInfoCore,
   parseModel,
   resolveModelAliasFromMap,
-} from "open-sse/services/model.js";
+} from "domain/services/model.js";
 
 import {
   getComboByName,

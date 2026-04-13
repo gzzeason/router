@@ -1,4 +1,4 @@
-import { initTranslators } from "open-sse/translator/index.js";
+import { initTranslators } from "domain/translator/index.js";
 
 import { handleChat } from "@/sse/handlers/chat.js";
 

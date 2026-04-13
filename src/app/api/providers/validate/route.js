@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-import { getDefaultModel } from "open-sse/config/providerModels.js";
+import { getDefaultModel } from "domain/config/providerModels.js";
 
 import { getProviderNodeById } from "@/models";
 import {

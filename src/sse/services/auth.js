@@ -4,7 +4,7 @@ import {
   formatRetryAfter,
   getEarliestModelLockUntil,
   isModelLockActive,
-} from "open-sse/services/accountFallback.js";
+} from "domain/services/accountFallback.js";
 
 import {
   getProviderConnections,

@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-import { fetchElevenLabsVoices } from "open-sse/handlers/ttsCore.js";
+import { fetchElevenLabsVoices } from "domain/handlers/ttsCore.js";
 
 import { getProviderConnections } from "@/lib/localDb";
 

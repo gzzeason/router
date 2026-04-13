@@ -9,7 +9,7 @@
  */
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 
-import { handleEmbeddingsCore } from "../../open-sse/handlers/embeddingsCore.js";
+import { handleEmbeddingsCore } from "../../domain/handlers/embeddingsCore.js";
 
 // ─── Mock the executors/index.js to avoid transitive uuid dependency ─────────
 // kiro.js (imported by executors/index.js) requires 'uuid' which isn't

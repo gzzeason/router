@@ -3,7 +3,7 @@ import {
   getProjectIdForConnection,
   invalidateProjectId,
   removeConnection,
-} from "open-sse/services/projectId.js";
+} from "domain/services/projectId.js";
 import {
   TOKEN_EXPIRY_BUFFER_MS as BUFFER_MS,
   formatProviderCredentials as _formatProviderCredentials,
@@ -19,7 +19,7 @@ import {
   refreshKiroToken as _refreshKiroToken,
   refreshQwenToken as _refreshQwenToken,
   refreshTokenByProvider as _refreshTokenByProvider,
-} from "open-sse/services/tokenRefresh.js";
+} from "domain/services/tokenRefresh.js";
 
 import { updateProviderConnection } from "../../lib/localDb.js";
 import * as log from "../utils/logger.js";

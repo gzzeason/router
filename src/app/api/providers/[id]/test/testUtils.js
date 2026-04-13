@@ -1,4 +1,4 @@
-import { getDefaultModel } from "open-sse/config/providerModels.js";
+import { getDefaultModel } from "domain/config/providerModels.js";
 
 import {
   getProviderConnectionById,
@@ -446,7 +446,7 @@ async function fetchWithConnectionProxy(
 ) {
   // Vercel relay: forward via relay URL
   if (effectiveProxy?.vercelRelayUrl) {
-    const { proxyAwareFetch } = await import("open-sse/utils/proxyFetch.js");
+    const { proxyAwareFetch } = await import("domain/utils/proxyFetch.js");
     return proxyAwareFetch(url, options, {
       vercelRelayUrl: effectiveProxy.vercelRelayUrl,
     });
@@ -459,7 +459,7 @@ async function fetchWithConnectionProxy(
     return fetch(url, options);
   }
 
-  const { proxyAwareFetch } = await import("open-sse/utils/proxyFetch.js");
+  const { proxyAwareFetch } = await import("domain/utils/proxyFetch.js");
   return proxyAwareFetch(url, options, {
     connectionProxyEnabled: true,
     connectionProxyUrl: effectiveProxy.connectionProxyUrl,

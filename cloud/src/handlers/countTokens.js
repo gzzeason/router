@@ -1,4 +1,4 @@
-import { errorResponse } from "open-sse/utils/error.js";
+import { errorResponse } from "domain/utils/error.js";
 
 const CORS_HEADERS = {
   "Access-Control-Allow-Origin": "*",

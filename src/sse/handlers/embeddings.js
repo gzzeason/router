@@ -1,6 +1,6 @@
-import { HTTP_STATUS } from "open-sse/config/runtimeConfig.js";
-import { handleEmbeddingsCore } from "open-sse/handlers/embeddingsCore.js";
-import { errorResponse, unavailableResponse } from "open-sse/utils/error.js";
+import { HTTP_STATUS } from "domain/config/runtimeConfig.js";
+import { handleEmbeddingsCore } from "domain/handlers/embeddingsCore.js";
+import { errorResponse, unavailableResponse } from "domain/utils/error.js";
 
 import { getSettings } from "@/lib/localDb";
 
